@@ -1,0 +1,185 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+/* ----------- */
+.nav_brand{
+    font-size: 25px;
+}
+.nav_brand:hover{
+    background-color: rgb(221, 243, 255);
+}
+.nav_hover{
+    font-size: 22px;
+}
+.nav_hover:hover{
+    background-color: rgb(219, 219, 219);
+}
+.nav_tweet{
+    width: 43%;
+    background-color: rgb(63, 158, 247);
+}
+.nav_tweet:hover{
+    background-color: rgb(54, 136, 230);
+}
+.my_profile{
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+.my_profile:hover{
+    background-color: rgb(196, 196, 196);
+    transition: .4s;
+}
+.my_pic{
+    width: 20%;
+}
+.my_pic img{
+    width: 100%;
+}
+.my_name{
+    width: 70%;
+}
+.my_icon{
+    font-size: 19px;
+}
+/* --------------------- */
+/* middle section */
+
+/* middle top fixed */
+.middle_top_fixed{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+}
+.middle_top_fixed h1{
+    font-size: 22px;
+}
+.middle_top_fixed .top_fixed_twitter{
+    padding: 5px 7px;
+}
+.middle_top_fixed .top_fixed_twitter:hover{
+    background-color: rgb(219, 219, 219);
+    transition: .4s;
+}
+
+/* news feed */
+.news_feed{
+    padding: 8px;
+}
+
+/* left_import_icon */
+.left_import_icon{
+    font-size: 19px;
+}
+.left_import_icon:hover{
+    background-color: rgb(203, 245, 255);
+    transition: .4s;
+}
+/* ----------------- */
+
+
+/* ----------------- */
+.user_name{
+    color: black;
+    font-weight: bold;
+}
+.user_name:hover{
+    color: black;
+    border-bottom: 1px solid black;
+}
+.dot a i{
+    padding: 8px;
+}
+.dot a i:hover{
+    background-color: rgb(189, 240, 255);
+    transition: .4s;
+}
+
+/* react */
+.react_icon i{
+    padding: 7px;
+}
+
+.react_icon:hover .fa-comment{
+    background-color: rgba(0, 174, 255, 0.4);
+    color: rgb(0, 174, 255);
+    transition: .4s;
+}
+.react_icon .fa-comment-span:hover{
+    color: rgb(0, 144, 211);
+    transition: .4s;
+}
+
+
+.react_icon:hover .fa-repeat{
+    background-color: rgba(60, 255, 0, 0.4);
+    color: rgb(60, 255, 0);
+    transition: .4s;
+}
+.react_icon .fa-repeat-span:hover{
+    color: rgb(42, 173, 2);
+    transition: .4s;
+}
+
+.react_icon:hover .fa-heart{
+    background-color: rgba(255, 0, 0, 0.4);
+    color: rgb(255, 0, 0);
+    transition: .4s;
+}
+.react_icon .fa-heart-span:hover{
+    color: rgb(173, 0, 0);
+    transition: .4s;
+}
+
+.react_icon:hover .fa-arrow-up{
+    background-color: rgba(0, 255, 128, 0.4);
+    color: rgb(0, 255, 128);
+    transition: .4s;
+}
+
+/* right side */
+.search_bar{
+    background-color: rgb(255, 255, 255);
+}
+
+.notification_bar{
+    background-color: rgb(245, 245, 245);
+}
+.notification_part .fa-ellipsis{
+    padding: 8px;
+    color: rgb(185, 185, 185);
+}
+.notification_part .fa-ellipsis:hover{
+    background-color: rgb(190, 234, 255);
+    color: rgba(0, 0, 255,0.5);
+    transition: .4s;
+}
+/* notification_part_hover */
+.notification_part_hover:hover{
+    background-color: rgb(221, 221, 221);
+    transition: .3s;
+}
+
+/* follow name */
+.follow_name:hover{
+    border-bottom: 1px solid black;
+}
+.follow{
+    background-color: black;
+}
+.follow:hover{
+    background-color: rgb(43, 43, 43);
+}
+.credit_name:hover{
+    border-bottom: 1px solid rgb(177, 177, 177);
+}
