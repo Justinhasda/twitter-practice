@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home / Twitter</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- deafult css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- cdn for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid m-auto" style="width:95%;">
+        <!-- main container -->
+        <div class="d-flex justify-content-between main-container">
+
+            <!-- left container -->
+            <div class="left_side" style="width: 20%;">
+                <div class="left_container position-fixed">
+                    <nav>
+                        <ul>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn border-0 rounded-circle text-primary nav_brand">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn border-0 rounded-pill ps-3 pe-3 nav_hover">
+                                    <i class="fa-solid fa-house pe-2"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn border-0 rounded-pill ps-3 pe-3 nav_hover">
+                                    <i class="fa-solid fa-hashtag pe-2"></i>
+                                    Explore
+                                </a>
+                            </li>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn border-0 rounded-pill ps-3 pe-3 nav_hover">
+                                    <i class="fa-regular fa-bell pe-2"></i>
+                                    Notification
+                                </a>
+                            </li>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn border-0 rounded-pill ps-3 pe-3 nav_hover">
+                                    <i class="fa-regular fa-envelope pe-2"></i>
+                                    Messages
+                                </a>
+                            </li>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn border-0 rounded-pill ps-3 pe-3 nav_hover">
+                                    <i class="fa-regular fa-bookmark pe-3"></i>
+                                    Bookmarks
+                                </a>
+                            </li>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn border-0 rounded-pill ps-3 pe-3 nav_hover">
+                                    <i class="fa-regular fa-rectangle-list pe-2"></i>
+                                    Lits
+                                </a>
+                            </li>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn border-0 rounded-pill ps-3 pe-3 nav_hover">
+                                    <i class="fa-regular fa-user pe-2"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn border-0 rounded-pill ps-3 pe-3 nav_hover">
+                                    <i class="fa-solid fa-ellipsis pe-2"></i>
+                                    More
+                                </a>
+                            </li>
+                            <li class="list-unstyled mb-2">
+                                <a href="#" class="btn btn-lg border-0 rounded-pill ps-3 pe-3 text-light fw-bold nav_tweet">
+                                    Tweet
+                                </a>
+                            </li>
+
+                            <li class="list-unstyled mb-2">
+                               <a href="#" class="text-decoration-none border-0 rounded-pill p-2 my_profile">
+                                <div class="my_pic">
+                                    <img src="assets/img/justin main pic.jpg" alt="" class="rounded-circle">
+                                </div>
+                                <div class="my_name ps-2 ">
+                                    <span class="text-dark fw-bold">Justin Hasda</span> <br>
+                                    <span class="text-secondary">@justinhasda</span>
+                                </div>
+                                <div class="my_icon text-dark">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                               </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- middle container -->
+            <div class="middle_side border-start border-end" style="width: 50%;">
+                <!-- top fixed -->
+                <div class="sticky-top d-flex justify-content-between align-items-center middle_top_fixed">
+                    <h1 class="top-fixed">Home</h1>
+                    <h1 class="rounded-circle top_fixed_twitter"><i class="fa-brands fa-twitter"></i></h1>
+                </div>
+
+                <!-- news feed -->
+                <div class="news_feed">
+
+                    <!-- status bar -->
+                    <div class="row border-bottom pb-2">
+                        <div class="col-1">
+                            <img src="assets/img/justin main pic.jpg" alt="profilepic" class="rounded-circle" style="width: 180%;">
+                        </div>
+                        <div class="col-11 ps-3">
+                            <!-- input for whats happening -->
+                            <div class="input">
+                                <input class="form-control me-2 border-0" type="search" placeholder="What's happening?" aria-label="Search" style="width: 100%; height:80px">
+                            </div>
+
+                            <!-- icon for what's happening -->
+                            <div class="icon d-flex justify-content-between mt-2 ps-1 pe-1">
+                                <div class="left-icon">
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-regular fa-image border-0 p-2 rounded-circle left_import_icon"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-solid fa-square-minus border-0 p-2 rounded-circle left_import_icon"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-solid fa-square-poll-horizontal border-0 p-2 rounded-circle left_import_icon"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-regular fa-face-smile border-0 p-2 rounded-circle left_import_icon"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-regular fa-calendar-days border-0 p-2 rounded-circle left_import_icon"></i>
+                                    </a>
+                                    <a href="#" class="text-decoration-none">
+                                        <i class="fa-solid fa-location-pin  border-0 p-2 rounded-circle left_import_icon"></i>
+                                    </a>
+                                </div>
+                                <div class="right-icon">
+                                    <a href="#" class="btn border-0 text-light fw-bold rounded-pill ps-3 pe-3" style="background-color: rgb(0, 204, 255);">Tweet</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- public post -->
+                    <div class="public_status mt-3 public_post">
+                        <div class="row pb-3 border-bottom">
+                            <div class="col-1">
+                                <img src="assets/img/bitto.jpg" alt="supentudu" class="rounded-circle" style="width: 180%;">
+                            </div>
+                            <div class="col-11 ps-4 pe-3">
+                                <!-- name & user name -->
+                                <div class="d-flex justify-content-between name-dot">
+                                    <div class="name">
+                                        <a href="#" class="text-decoration-none user_name">Amerson Bitto Tudu</a>
+                                        <a href="#" class="text-decoration-none text-secondary">@amersonbitto</a>
+                                        <a href="#" class="text-decoration-none text-secondary">19h</a>
+                                    </div>
+                                    <div class="dot">
+                                        <a href="#">
+                                            <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- post -->
+                                <div class="post pe-3">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque veniam modi exercitationem eveniet sint. Quas ullam consequatur dignissimos fuga accusantium ab corrupti doloremque ex deserunt, earum maxime, recusandae unde voluptatem!
+                                </div>
+
+                                <!-- img -->
+                                <!-- <div class="post-img pt-2 pe-2">
+                                    <img src="" alt="img-1" class="w-100 rounded">
+                                </div> -->
+
+                                <!-- react -->
+                                <div class="react d-flex justify-content-between mt-2" style="width: 80%;">
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-comment rounded-circle"></i>
+                                        <span class="fa-comment-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-repeat rounded-circle"></i>
+                                        <span class="fa-repeat-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-heart rounded-circle"></i>
+                                        <span class="fa-heart-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-arrow-up rounded-circle ps-2 pe-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="public_status mt-3">
+                        <div class="row pb-3 border-bottom">
+                            <div class="col-1">
+                                <img src="assets/img/mimmo.jpg" alt="supentudu" class="rounded-circle" style="width: 180%;">
+                            </div>
+                            <div class="col-11 ps-4 pe-3">
+                                <!-- name & user name -->
+                                <div class="d-flex justify-content-between name-dot">
+                                    <div class="name">
+                                        <a href="#" class="text-decoration-none user_name">Supen Tudu</a>
+                                        <a href="#" class="text-decoration-none text-secondary">@amersonbitto</a>
+                                        <a href="#" class="text-decoration-none text-secondary">19h</a>
+                                    </div>
+                                    <div class="dot">
+                                        <a href="#">
+                                            <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- post -->
+                                <div class="post pe-3">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque veniam modi exercitationem eveniet sint. Quas ullam consequatur dignissimos fuga accusantium ab corrupti doloremque ex deserunt, earum maxime, recusandae unde voluptatem!
+                                </div>
+
+                                <div class="post-img pt-2 pe-2">
+                                    <img src="assets/img/guitar promoter.jpg" alt="img-1" class="w-100 rounded">
+                                </div>
+
+                                <!-- react -->
+                                <div class="react d-flex justify-content-between mt-2" style="width: 80%;">
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-comment rounded-circle"></i>
+                                        <span class="fa-comment-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-repeat rounded-circle"></i>
+                                        <span class="fa-repeat-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-heart rounded-circle"></i>
+                                        <span class="fa-heart-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-arrow-up rounded-circle ps-2 pe-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="public_status mt-3">
+                        <div class="row pb-3 border-bottom">
+                            <div class="col-1">
+                                <img src="assets/img/guitar promoter.jpg" alt="supentudu" class="rounded-circle" style="width: 180%;">
+                            </div>
+                            <div class="col-11 ps-4 pe-3">
+                                <!-- name & user name -->
+                                <div class="d-flex justify-content-between name-dot">
+                                    <div class="name">
+                                        <a href="#" class="text-decoration-none user_name">Santo Soren</a>
+                                        <a href="#" class="text-decoration-none text-secondary">@santosoren</a>
+                                        <a href="#" class="text-decoration-none text-secondary">19h</a>
+                                    </div>
+                                    <div class="dot">
+                                        <a href="#">
+                                            <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- post -->
+                                <div class="post pe-3">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque veniam modi exercitationem eveniet sint. Quas ullam consequatur dignissimos fuga accusantium ab corrupti doloremque ex deserunt, earum maxime, recusandae unde voluptatem!
+                                </div>
+
+                                <div class="post-img pt-2 pe-2">
+                                    <img src="assets/img/louis-hansel-M_dJ_ScwaLE-unsplash.jpg" alt="img-1" class="w-100 rounded">
+                                </div>
+
+                                <!-- react -->
+                                <div class="react d-flex justify-content-between mt-2" style="width: 80%;">
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-comment rounded-circle"></i>
+                                        <span class="fa-comment-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-repeat rounded-circle"></i>
+                                        <span class="fa-repeat-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-heart rounded-circle"></i>
+                                        <span class="fa-heart-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-arrow-up rounded-circle ps-2 pe-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="public_status mt-3">
+                        <div class="row pb-3 border-bottom">
+                            <div class="col-1">
+                                <img src="assets/img/justin main pic.jpg" alt="supentudu" class="rounded-circle" style="width: 180%;">
+                            </div>
+                            <div class="col-11 ps-4 pe-3">
+                                <!-- name & user name -->
+                                <div class="d-flex justify-content-between name-dot">
+                                    <div class="name">
+                                        <a href="#" class="text-decoration-none user_name">
+                                            Joy Hasda
+                                        </a>
+                                        <a href="#" class="text-decoration-none text-secondary">@joyhasda</a>
+                                        <a href="#" class="text-decoration-none text-secondary">19h</a>
+                                    </div>
+                                    <div class="dot">
+                                        <a href="#">
+                                            <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- post -->
+                                <div class="post pe-3">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque veniam modi exercitationem eveniet sint. Quas ullam consequatur dignissimos fuga accusantium ab corrupti doloremque ex deserunt, earum maxime, recusandae unde voluptatem!
+                                </div>
+
+                                <div class="post-img pt-2 pe-2">
+                                    <img src="assets/img/electric guitar.jpg" alt="img-1" class="w-100 rounded">
+                                </div>
+
+                                <!-- react -->
+                                <div class="react d-flex justify-content-between mt-2" style="width: 80%;">
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-comment rounded-circle"></i>
+                                        <span class="fa-comment-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-repeat rounded-circle"></i>
+                                        <span class="fa-repeat-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-heart rounded-circle"></i>
+                                        <span class="fa-heart-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-arrow-up rounded-circle ps-2 pe-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="public_status mt-3">
+                        <div class="row pb-3 border-bottom">
+                            <div class="col-1">
+                                <img src="assets/img/bitto.jpg" alt="supentudu" class="rounded-circle" style="width: 180%;">
+                            </div>
+                            <div class="col-11 ps-4 pe-3">
+                                <!-- name & user name -->
+                                <div class="d-flex justify-content-between name-dot">
+                                    <div class="name">
+                                        <a href="#" class="text-decoration-none user_name">Amerson Bitto Tudu</a>
+                                        <a href="#" class="text-decoration-none text-secondary">@amersonbitto</a>
+                                        <a href="#" class="text-decoration-none text-secondary">19h</a>
+                                    </div>
+                                    <div class="dot">
+                                        <a href="#">
+                                            <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- post -->
+                                <div class="post pe-3">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque veniam modi exercitationem eveniet sint. Quas ullam consequatur dignissimos fuga accusantium ab corrupti doloremque ex deserunt, earum maxime, recusandae unde voluptatem!
+                                </div>
+
+                                <div class="post-img pt-2 pe-2">
+                                    <img src="assets/img/drum.jpg" alt="img-1" class="w-100 rounded">
+                                </div>
+
+                                <!-- react -->
+                                <div class="react d-flex justify-content-between mt-2" style="width: 80%;">
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-comment rounded-circle"></i>
+                                        <span class="fa-comment-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-repeat rounded-circle"></i>
+                                        <span class="fa-repeat-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-heart rounded-circle"></i>
+                                        <span class="fa-heart-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-arrow-up rounded-circle ps-2 pe-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="public_status mt-3">
+                        <div class="row pb-3 border-bottom">
+                            <div class="col-1">
+                                <img src="assets/img/bitto.jpg" alt="supentudu" class="rounded-circle" style="width: 180%;">
+                            </div>
+                            <div class="col-11 ps-4 pe-3">
+                                <!-- name & user name -->
+                                <div class="d-flex justify-content-between name-dot">
+                                    <div class="name">
+                                        <a href="#" class="text-decoration-none user_name">Amerson Bitto Tudu</a>
+                                        <a href="#" class="text-decoration-none text-secondary">@amersonbitto</a>
+                                        <a href="#" class="text-decoration-none text-secondary">19h</a>
+                                    </div>
+                                    <div class="dot">
+                                        <a href="#">
+                                            <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- post -->
+                                <div class="post pe-3">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque veniam modi exercitationem eveniet sint. Quas ullam consequatur dignissimos fuga accusantium ab corrupti doloremque ex deserunt, earum maxime, recusandae unde voluptatem!
+                                </div>
+
+                                <div class="post-img pt-2 pe-2">
+                                    <img src="assets/img/card-img/queen.jpg" alt="img-1" class="w-100 rounded">
+                                </div>
+
+                                <!-- react -->
+                                <div class="react d-flex justify-content-between mt-2" style="width: 80%;">
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-comment rounded-circle"></i>
+                                        <span class="fa-comment-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-repeat rounded-circle"></i>
+                                        <span class="fa-repeat-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-heart rounded-circle"></i>
+                                        <span class="fa-heart-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-arrow-up rounded-circle ps-2 pe-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="public_status mt-3">
+                        <div class="row pb-3 border-bottom">
+                            <div class="col-1">
+                                <img src="assets/img/bitto.jpg" alt="supentudu" class="rounded-circle" style="width: 180%;">
+                            </div>
+                            <div class="col-11 ps-4 pe-3">
+                                <!-- name & user name -->
+                                <div class="d-flex justify-content-between name-dot">
+                                    <div class="name">
+                                        <a href="#" class="text-decoration-none user_name">Amerson Bitto Tudu</a>
+                                        <a href="#" class="text-decoration-none text-secondary">@amersonbitto</a>
+                                        <a href="#" class="text-decoration-none text-secondary">19h</a>
+                                    </div>
+                                    <div class="dot">
+                                        <a href="#">
+                                            <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- post -->
+                                <div class="post pe-3">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque veniam modi exercitationem eveniet sint. Quas ullam consequatur dignissimos fuga accusantium ab corrupti doloremque ex deserunt, earum maxime, recusandae unde voluptatem!
+                                </div>
+
+                                <div class="post-img pt-2 pe-2">
+                                    <img src="assets/img/card-img/movie-1.jpg" alt="img-1" class="w-100 rounded">
+                                </div>
+
+                                <!-- react -->
+                                <div class="react d-flex justify-content-between mt-2" style="width: 80%;">
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-comment rounded-circle"></i>
+                                        <span class="fa-comment-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-repeat rounded-circle"></i>
+                                        <span class="fa-repeat-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-regular fa-heart rounded-circle"></i>
+                                        <span class="fa-heart-span">3245</span>
+                                    </a>
+                                    <a href="#" class="text-decoration-none text-secondary react_icon">
+                                        <i class="fa-solid fa-arrow-up rounded-circle ps-2 pe-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right-container -->
+            <div class="right_side me-2" style="width: 30%;">
+
+                <!-- input search bar -->
+                <div class="search_bar ps-4 pt-2 pb-2 pe-2 position-fixed" style="width: 370px;">
+                    <input class="form-control me-2 rounded-pill border-0" type="search" placeholder="   Search Twitter" aria-label="Search" style="background-color: rgb(240, 240, 240); height: 45px;">
+                </div>
+
+                <!-- notification bar -->
+                <div class="notification_bar rounded ms-4 me-2" style="margin-top:68px;">
+                    <div class="notification_bar_inner p-2">
+                        <h5 class="pb-3">Trends For You</h5>
+
+                        <!-- notification -->
+                        <div class="notification_part ps-1 pe-1">
+                            <a href="#" class="text-decoration-none">
+                                <div class="row notification_part_hover  pt-2 pb-2">
+                                    <div class="col-10">
+                                        <span class="d-block text-secondary">Trands for Bangladesh</span>
+                                        <span class="d-block fw-bold text-dark">Bangladesh</span>
+                                        <span class="d-block text-secondary">11.4K Tweets</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="text-decoration-none">
+                                <div class="row notification_part_hover  pt-2 pb-2">
+                                    <div class="col-10">
+                                        <span class="d-block text-secondary">Trands for America</span>
+                                        <span class="d-block fw-bold text-dark">American Military</span>
+                                        <span class="d-block text-secondary">23.1K Tweets</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="text-decoration-none">
+                                <div class="row notification_part_hover  pt-2 pb-2">
+                                    <div class="col-10">
+                                        <span class="d-block text-secondary">Trands for Bangladesh</span>
+                                        <span class="d-block fw-bold text-dark">Dhaka</span>
+                                        <span class="d-block text-secondary">12.4K Tweets</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="text-decoration-none">
+                                <div class="row notification_part_hover  pt-2 pb-2">
+                                    <div class="col-10">
+                                        <span class="d-block text-secondary">Trands for Free-Fire</span>
+                                        <span class="d-block fw-bold text-dark">AK-47 Gun Skin</span>
+                                        <span class="d-block text-secondary">51.9K Tweets</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="text-decoration-none">
+                                <div class="row notification_part_hover  pt-2 pb-2">
+                                    <div class="col-10">
+                                        <span class="d-block text-secondary">Trands for Car</span>
+                                        <span class="d-block fw-bold text-dark">BMW NEW CAR</span>
+                                        <span class="d-block text-secondary">11.4K Tweets</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="text-decoration-none">
+                                <div class="row notification_part_hover  pt-2 pb-2">
+                                    <div class="col-10">
+                                        <span class="d-block text-secondary">Trands for Hollywood</span>
+                                        <span class="d-block fw-bold text-dark">Hollywood Movie's</span>
+                                        <span class="d-block text-secondary">66.1K Tweets</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="text-decoration-none">
+                                <div class="row notification_part_hover  pt-2 pb-2">
+                                    <div class="col-10">
+                                        <span class="d-block text-secondary">Trands for VS-CODE</span>
+                                        <span class="d-block fw-bold text-dark">VS-CODE</span>
+                                        <span class="d-block text-secondary">11.4K Tweets</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="text-decoration-none">
+                                <div class="row notification_part_hover  pt-2 pb-2">
+                                    <div class="col-10">
+                                        <span class="d-block text-secondary">Trands for Subline</span>
+                                        <span class="d-block fw-bold text-dark">SUBLINE TEXT EDITOR</span>
+                                        <span class="d-block text-secondary">11.4K Tweets</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="text-decoration-none">
+                                <div class="row notification_part_hover  pt-2 pb-2">
+                                    <div class="col-10">
+                                        <span class="d-block text-secondary">Trands for Education</span>
+                                        <span class="d-block fw-bold text-dark">ADMISSION GOING ON</span>
+                                        <span class="d-block text-secondary">11.4K Tweets</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <i class="fa-solid fa-ellipsis rounded-circle"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- follow partr -->
+                <div class="notification_bar rounded ms-4 me-2 mt-4">
+                    <div class="notification_bar_inner">
+                        <h5 class="ps-3 pt-2 fw-bold">Who to follow</h5>
+                        <!-- notification -->
+                        <div class="d-flex justify-content-between notification_part notification_part_hover p-3">
+                            <a href="#" class="text-decoration-none" style="width: 30%;">
+                                <img src="assets/img/pro pic.jpg" alt="" class="w-100 rounded-circle">
+                            </a>
+                            <a href="#" class="ps-2 text-decoration-none" style="width: 100%;">
+                                <span class="text-dark fw-bold follow_name">Richard Hasda</span> <br>
+                                <span class="text-secondary">@richardhasda</span>
+                            </a>
+                            <a href="#" class="follow btn border rounded-pill h-25 text-light fw-bold">Follow</a>
+                        </div>
+
+                        <!-- notification -->
+                        <div class="d-flex justify-content-between notification_part notification_part_hover p-3">
+                            <a href="#" class="text-decoration-none" style="width: 30%;">
+                                <img src="assets/img/bitto.jpg" alt="" class="w-100 rounded-circle">
+                            </a>
+                            <a href="#" class="ps-2 text-decoration-none" style="width: 100%;">
+                                <span class="text-dark fw-bold follow_name">Mibsam Hasda</span> <br>
+                                <span class="text-secondary">@mibsamhasda</span>
+                            </a>
+                            <a href="#" class="follow btn border rounded-pill h-25 text-light fw-bold">Follow</a>
+                        </div>
+
+                        <!-- notification -->
+                        <div class="d-flex justify-content-between notification_part notification_part_hover p-3">
+                            <a href="#" class="text-decoration-none" style="width: 30%;">
+                                <img src="assets/img/mimmo.jpg" alt="" class="w-100 rounded-circle">
+                            </a>
+                            <a href="#" class="ps-2 text-decoration-none" style="width: 100%;">
+                                <span class="text-dark fw-bold follow_name">MimmoHasda</span> <br>
+                                <span class="text-secondary">@mimmohasda</span>
+                            </a>
+                            <a href="#" class="follow btn border rounded-pill h-25 text-light fw-bold">Follow</a>
+                        </div>
+
+                         <!-- notification -->
+                         <div class="d-flex justify-content-between notification_part notification_part_hover p-3">
+                            <a href="#" class="text-decoration-none" style="color: rgb(0, 140, 255);">Show more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- credit -->
+                <div class="credit ms-4 p-2">
+                    <a href="#" class="pe-2 text-secondary text-decoration-none credit_name" style="font-size: 14px;">Terms of Service</a>
+                    <a href="#" class="pe-2 text-secondary text-decoration-none credit_name" style="font-size: 14px;">Privacy Policy</a>
+                    <a href="#" class="pe-2 text-secondary text-decoration-none credit_name" style="font-size: 14px;">Cookie Policy</a>
+                    <a href="#" class="pe-2 text-secondary text-decoration-none credit_name" style="font-size: 14px;">Accessibility</a>
+                    <a href="#" class="pe-2 text-secondary text-decoration-none credit_name" style="font-size: 14px;">Ads info</a>
+                    <a href="#" class="pe-2 text-secondary text-decoration-none credit_name" style="font-size: 14px;">More....</a>
+                    <a href="#" class="pe-2 text-secondary text-decoration-none credit_name" style="font-size: 14px;">©2022 Twitter, Inc.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap js  -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
